@@ -1,0 +1,201 @@
+/* 基本重置 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微軟正黑體", "Microsoft JhengHei", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+/* === 導覽列樣式 === */
+.header {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.header-main {
+    /* 移除 max-width，改用 padding 讓內容貼近視窗邊緣 */
+    padding: 20px 5%; 
+    display: flex;
+    justify-content: space-between; /* 讓 Logo 在最左、選單在中、搜尋在最右 */
+    align-items: center;
+}
+
+/* 預設 Logo 空位樣式，放入真實圖片後可移除 inline-style 的背景 */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #1fa08e;
+}
+
+.divider {
+    color: #e0e0e0;
+    font-weight: 300;
+}
+
+/* 搜尋框樣式 */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background-color: #fff;
+    width: 200px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === 麵包屑樣式 === */
+.breadcrumb-bar {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    padding: 15px 5%; /* 這裡的 padding 與標題列保持 5% 一致，確保完美向下對齊 */
+    margin-bottom: 40px;
+    text-align: left; /* 確保內容靠左 */
+}
+
+.breadcrumb-container {
+    /* 取消了原本的 max-width 置中限制，讓它跟隨外層容器靠左 */
+    font-size: 14px;
+    color: #888;
+}
+
+.breadcrumb-container a {
+    color: #888;
+    text-decoration: none;
+}
+
+.breadcrumb-container a:hover {
+    text-decoration: underline;
+}
+
+.current-page {
+    color: #888;
+}
+
+/* === 表單主體樣式 === */
+.container {
+    max-width: 800px; /* 下方的表單區塊維持置中與固定寬度 */
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px 40px 20px;
+}
+
+.page-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-wrapper {
+    background-color: #ffffff;
+    border: 6px solid #20A783;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.instructions {
+    text-align: left;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.form-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.input-row label {
+    font-size: 16px;
+    width: 30px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.input-row input {
+    width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-row input:focus {
+    border-color: #20A783;
+}
+
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #20A783;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #178a6c;
+}
