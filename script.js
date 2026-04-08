@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const clearBtn = document.getElementById("clearBtn");
     const submitBtn = document.getElementById("submitBtn");
 
-    // 動態生成 1 到 10 的輸入框
+    //  1 到 10 的輸入框
     for (let i = 1; i <= 10; i++) {
         const row = document.createElement("div");
         row.className = "input-row";
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         inputContainer.appendChild(row);
     }
 
-    // 「清除重填」按鈕功能
+    // 清除重填
     clearBtn.addEventListener("click", function() {
         const inputs = document.querySelectorAll(".tracking-input");
         inputs.forEach(input => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // 「確認送出」按鈕功能
+    // 確認送出
     submitBtn.addEventListener("click", function() {
         const inputs = document.querySelectorAll(".tracking-input");
         let trackingNumbers = [];

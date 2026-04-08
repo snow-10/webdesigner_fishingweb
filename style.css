@@ -1,4 +1,3 @@
-/* 基本重置 */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,21 +10,19 @@ body {
     color: #000000;
 }
 
-/* === 導覽列樣式 === */
+/* 導覽列 */
 .header {
     background-color: #ffffff;
     width: 100%;
 }
 
 .header-main {
-    /* 移除 max-width，改用 padding 讓內容貼近視窗邊緣 */
     padding: 20px 5%; 
     display: flex;
-    justify-content: space-between; /* 讓 Logo 在最左、選單在中、搜尋在最右 */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* 預設 Logo 空位樣式，放入真實圖片後可移除 inline-style 的背景 */
 .logo img {
     max-width: 100%;
     height: auto;
@@ -53,7 +50,7 @@ body {
     font-weight: 300;
 }
 
-/* 搜尋框樣式 */
+/* 搜尋 */
 .search-container {
     display: flex;
     align-items: center;
@@ -82,18 +79,17 @@ body {
     justify-content: center;
 }
 
-/* === 麵包屑樣式 === */
+/* 麵包屑 */
 .breadcrumb-bar {
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #e0e0e0;
     background-color: #ffffff;
-    padding: 15px 5%; /* 這裡的 padding 與標題列保持 5% 一致，確保完美向下對齊 */
+    padding: 15px 5%;
     margin-bottom: 40px;
-    text-align: left; /* 確保內容靠左 */
+    text-align: left;
 }
 
 .breadcrumb-container {
-    /* 取消了原本的 max-width 置中限制，讓它跟隨外層容器靠左 */
     font-size: 14px;
     color: #888;
 }
@@ -111,9 +107,9 @@ body {
     color: #888;
 }
 
-/* === 表單主體樣式 === */
+/* 表單 */
 .container {
-    max-width: 800px; /* 下方的表單區塊維持置中與固定寬度 */
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
     padding: 0 20px 40px 20px;
@@ -144,7 +140,7 @@ body {
 }
 
 .form-title {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 20px;
     font-weight: bold;
 }
